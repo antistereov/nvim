@@ -9,5 +9,5 @@ vim.cmd("set nowrap")
 vim.cmd("set clipboard+=unnamedplus")
 
 vim.opt.spell = true
-vim.opt.spelllang = 'en_us'
-vim.opt.spelloptions:append('camel')
+vim.opt.spelllang = "en_us"
+vim.opt.spelloptions:append("camel")
