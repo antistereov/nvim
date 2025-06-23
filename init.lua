@@ -1,5 +1,6 @@
 require("config.lazy")
 require("config.theme")
+require("config.keymap")
 require("config.telescope")
 require("config.treesitter")
 
