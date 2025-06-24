@@ -1,6 +1,9 @@
 return {
 	"nvim-lualine/lualine.nvim",
-	dependencies = { "nvim-tree/nvim-web-devicons" },
+	dependencies = {
+        "nvim-tree/nvim-web-devicons",
+        "yavorski/lualine-macro-recording.nvim"
+    },
 	config = function()
         -- Bubbles config for lualine
         -- Author: lokesh-krishna
@@ -60,9 +63,9 @@ return {
 			},
 			sections = {
 				lualine_a = { { "mode", separator = { left = "" }, right_padding = 2 } },
-				lualine_b = { "filename", "branch" },
+				lualine_b = { "filename" },
 				lualine_c = {
-					"%=", --[[ add your center components here in place of this comment ]]
+					"macro_recording", "%S" --[[ add your center components here in place of this comment ]]
 				},
 				lualine_x = {},
 				lualine_y = { "filetype", "progress" },
