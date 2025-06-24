@@ -11,3 +11,5 @@ vim.cmd("set clipboard+=unnamedplus")
 vim.opt.spell = true
 vim.opt.spelllang = "en_us"
 vim.opt.spelloptions:append("camel")
+vim.wo.relativenumber = true
+vim.opt.number = true
